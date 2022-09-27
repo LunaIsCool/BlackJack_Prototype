@@ -4,7 +4,7 @@ int pickcard(void)
 {
 
     srand((unsigned)time(NULL));
-    int cardNum = (rand() % 10);
+    int cardNum = ((rand() % 10)+1);
     if (cardNum == 0 || cardNum == 11)
     {
        cardNum = ace();
